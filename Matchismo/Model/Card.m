@@ -23,4 +23,9 @@
     return score;
 }
 
+- (BOOL)isFlippable
+{
+    return self.isFaceUp && !self.isUnplayable;
+}
+
 @end

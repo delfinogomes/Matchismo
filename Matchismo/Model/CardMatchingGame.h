@@ -18,8 +18,12 @@
 
 - (void)flipCardAtIndex:(NSUInteger)index;
 
--(Card *)cardAtIndex:(NSUInteger)index;
+- (Card *)cardAtIndex:(NSUInteger)index;
+
+- (NSString *)lastFlipResult;
 
 @property (readonly, nonatomic) int score;
+@property (nonatomic, assign) NSInteger numberOfCards;
+@property (strong, nonatomic) NSArray *flipResults;
 
 @end

@@ -17,10 +17,46 @@
     if ([otherCards count] == 1) {
         PlayingCard *otherCard = [otherCards lastObject];
         if ([otherCard.suit isEqualToString:self.suit]) {
-            score = 1;
+            score = 2;
         } else if (otherCard.rank == self.rank) {
             score = 4;
         }
+    } else if ([otherCards count] == 2) {
+        
+        NSArray *allCards = [otherCards arrayByAddingObject:self];
+        
+        int countSuit = 0;
+        int countRank = 0;
+        
+        for (int i = 0; i < allCards.count; i++) {
+            PlayingCard *card = allCards[i];
+            for (int j = i + 1; j < allCards.count; j++) {
+                PlayingCard *card2 = allCards[j];
+                if (card.suit == card2.suit) {
+                    countSuit++;
+                }
+                if (card.rank == card2.rank) {
+                    countRank++;
+                }
+            }
+        }
+        
+        BOOL considerRank = countRank > countSuit;
+        
+        if (considerRank) {
+            if (countRank == 3) {
+                score = 5;
+            } else if (countRank == 2) {
+                score = 3;
+            }
+        } else {
+            if (countSuit == 3) {
+                score = 3;
+            } else if (countSuit == 2) {
+                score = 1;
+            }
+        }
+        
     }
 
     return score;

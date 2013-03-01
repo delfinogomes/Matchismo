@@ -17,6 +17,7 @@
 		3454E9E816D6216500A77BE7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3454E9E716D6216500A77BE7 /* Default-568h@2x.png */; };
 		3454E9EB16D6216500A77BE7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3454E9E916D6216500A77BE7 /* MainStoryboard.storyboard */; };
 		3454E9EE16D6216500A77BE7 /* CardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3454E9ED16D6216500A77BE7 /* CardGameViewController.m */; };
+		345BD93616DF2DCA004AA208 /* cardback.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 345BD93516DF2DCA004AA208 /* cardback.jpg */; };
 		347E7F6B16D9461A00D0AF3A /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 347E7F6A16D9461A00D0AF3A /* Card.m */; };
 		347E7F6E16D9462D00D0AF3A /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 347E7F6D16D9462D00D0AF3A /* Deck.m */; };
 		347E7F7416D95CE300D0AF3A /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 347E7F7316D95CE300D0AF3A /* PlayingCardDeck.m */; };
@@ -42,6 +43,7 @@
 		3454E9EA16D6216500A77BE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3454E9EC16D6216500A77BE7 /* CardGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardGameViewController.h; sourceTree = "<group>"; };
 		3454E9ED16D6216500A77BE7 /* CardGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardGameViewController.m; sourceTree = "<group>"; };
+		345BD93516DF2DCA004AA208 /* cardback.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cardback.jpg; sourceTree = "<group>"; };
 		347E7F6916D9461A00D0AF3A /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		347E7F6A16D9461A00D0AF3A /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		347E7F6C16D9462D00D0AF3A /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		3454E9D816D6216500A77BE7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				345BD93516DF2DCA004AA208 /* cardback.jpg */,
 				34B0CB5216DE0696009DAB4A /* Default@2x.png */,
 				34B0CB5016DE0675009DAB4A /* card game icon_thumb.png */,
 				3454E9E016D6216500A77BE7 /* CardGameAppDelegate.h */,
@@ -201,6 +204,7 @@
 				3454E9EB16D6216500A77BE7 /* MainStoryboard.storyboard in Resources */,
 				34B0CB5116DE0675009DAB4A /* card game icon_thumb.png in Resources */,
 				34B0CB5316DE0696009DAB4A /* Default@2x.png in Resources */,
+				345BD93616DF2DCA004AA208 /* cardback.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +275,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CODE_SIGN_FLAGS = "-gta";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -296,7 +300,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CODE_SIGN_FLAGS = "-gta";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -308,7 +312,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
-				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CODE_SIGN_FLAGS = "-gta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -320,7 +324,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
-				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CODE_SIGN_FLAGS = "-gta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
